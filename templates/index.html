@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sofa</title>
+    <!-- Favicon -->
+    <link rel="icon" href="static/images/favicon.ico" sizes="32x32">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel='stylesheet' href='static/css/fontawesome.min.css'>
+    <!-- Animate -->
+    <link href="static/css/animate.css" rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+    <!-- light box -->
+    <link rel="stylesheet" href="static/css/lightbox.min.css">
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="static/css/jquery-ui.min.css">
+    <!-- nice select -->
+    <link rel="stylesheet" href="static/css/nice-select.min.css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="static/scss/main.css">
+
+</head>
+
+<body>
+<!-- main header navbar -->
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar" id="mainMenu">
+    <div class="container">
+        <a class="navbar-brand" href="index-2.html">
+            <img src="static/images/logo.png" alt="">
+        </a>
+        <!--  navbar actions -->
+        <div class="main-navbar-action">
+            <!-- navbar search box -->
+            <div class="search-wrapper">
+                <div class="search-wrapper__btn">
+                    <i class="icon-search"></i>
+                </div>
+                <div class="search-wrapper__box">
+                    <div class="search-box" id="the-basics">
+                        <form>
+                            <div class="form-group form-input form-input--search">
+                                <input type="text" class="form-control typeahead" id="search" name="search" value=""
+                                       placeholder="Search...">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- end of navbar search box -->
+            <div id="mainNavbarDropdown">
+                <!-- navbar user account dropdown -->
+                <div class="dropdown-wrapper" id="usermenu" data-collapse="false">
+                    <div class="account-wrapper">
+                        <!-- login form wrapper -->
+                        <div class="account-wrapper__heading">
+                            <span>Login</span>
+                            <span class="account-wrapper__heading--link">Dont you have an account? <a
+                                    href="signup.html">Sign up</a></span>
+                        </div>
+                        <div class="account-wrapper__content">
+                            <form class="custom-form">
+                                <div class="form-group custom-form__input">
+                                    <input type="email" class="form-control" id="emailInput"
+                                           placeholder="Email">
+                                </div>
+                                <div class="form-group custom-form__input">
+                                    <div class="input-box password-box">
+                                        <input type="password" class="form-control" id="passwordInput"
+                                               placeholder="Password">
+                                        <div class="input-box__icon">
+                                            <span class="showhidepassword"><i class="far fa-eye-slash"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="forgot-pass">
+                                    <a href="resetpass.html">
+                                        <small>Forget your password?</small>
+                                    </a>
+                                </div>
+                                <div class="custom-form__btn">
+                                    <button type="submit" class="btn submit-btn">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- account links when user is logged in-->
+                        <!--                    <a class="dropdown-item" href="account.html#v-pills-profile-tab"><span><i-->
+                        <!--                            class="icon-user-profile"></i></span>Profile</a>-->
+                        <!--                    <a class="dropdown-item" href="account.html#v-pills-order-tab"><span><i-->
+                        <!--                            class="icon-shopping-basket"></i></span>Orders</a>-->
+                        <!--                    <a class="dropdown-item" href="account.html#v-pills-address-tab"><span><i-->
+                        <!--                            class="icon-sign"></i></span>Addresses</a>-->
+                        <!--                    <a class="dropdown-item" href="account.html#v-pills-wishlist-tab"><span><i-->
+                        <!--                            class="icon-wish-list"></i></span>wishlist</a>-->
+                        <!--                    <a class="dropdown-item" href="#"><span><i class="icon-log-out"></i></span>Log out</a>-->
+
+                    </div>
+                </div>
+                <!-- navbar cart dropdown -->
+                <div class="dropdown-wrapper" id="cartmenu" data-collapse="false">
+                    <div class="dropdown-wrapper__item">
+                        <div class="media">
+                            <div class="media__img">
+                                <a class="delete-icon" href="#"><i class="icon-bin"></i></a>
+                                <a href="#"><img src="static/images/product-01.jpg" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <a href="#"><h6 class="media-title">Fabric armchair</h6></a>
+                                <small class="media-details">$120.00</small>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media__img">
+                                <a class="delete-icon" href="#"><i class="icon-bin"></i></a>
+                                <a href="#"><img src="static/images/product-03.jpg" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <a href="#"><h6 class="media-title">Fabric armchair</h6></a>
+                                <small class="media-details">$140.00</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-wrapper__item total-price">
+                        <span>Total price: <span>$260.00</span></span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-wrapper__item cart-btn">
+                        <a href="#" class="btn cart-btn__checkout">Checkout</a>
+                        <a href="#" class="btn cart-btn__details">View cart</a>
+                    </div>
+                    <!-- the cart is empty -->
+                    <!--                    <div class="empty-cart">-->
+                    <!--                        <i class="icon-close empty-cart__icon"></i>-->
+                    <!--                        <p class="empty-cart__text">There is no product in your cart</p>-->
+                    <!--                    </div>-->
+                </div>
+            </div>
+            <!-- navbar user account dropdown -->
+            <div class="main-navbar-action__btn nav-dropdown">
+                <a class="dropdown-link" data-target="usermenu">
+                    <i class="icon-user"></i>
+                </a>
+            </div>
+            <!-- navbar cart dropdown -->
+            <div class="main-navbar-action__btn nav-dropdown">
+                <a class="dropdown-link" data-target="cartmenu">
+                    <span class="cart-badge">2</span>
+                    <i class="icon-shopping-bag"></i>
+                </a>
+            </div>
+            <!-- navbar actions content -->
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+                aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav main-navbar">
+                <li class="nav-item main-navbar__item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
+                    <div class="dropdown-menu">
+
+                    </div>
+                </li>
+                <li class="nav-item main-navbar__item dropdown megamenu">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Shop</a>
+                    <div class="dropdown-menu megamenu__list">
+                        <div class="row no-gutters">
+                            <div class="col-lg-8 megamenu__list--content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="megamenu__list--title">Shop Layout</h5>
+                                        <a class="dropdown-item" href="shop-sidebar-right.html">Shop right
+                                            sidebar</a>
+                                        <a class="dropdown-item" href="shop-sidebar-left.html">Shop left
+                                            sidebar</a>
+                                        <a class="dropdown-item" href="shop-list.html">Shop list style</a>
+                                        <a class="dropdown-item" href="shop-grid.html">Shop grid style</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="megamenu__list--title">Shop Pages</h5>
+                                        <a class="dropdown-item" href="single-product.html">Single product</a>
+                                        <a class="dropdown-item" href="cart01.html">Shopping Cart 01</a>
+                                        <a class="dropdown-item" href="cart02.html">Shopping Cart 02</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 megamenu__list--img">
+                                <img src="static/images/megamenu-thumb02.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item main-navbar__item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Blog</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="blog-list-full.html">Blog list 01</a>
+                        <a class="dropdown-item" href="blog-list.html">Blog list 02</a>
+                        <a class="dropdown-item" href="blog-grid.html">Blog grid view</a>
+                        <a class="dropdown-item" href="single-blog-post.html">Single blog post</a>
+                    </div>
+                </li>
+                <li class="nav-item main-navbar__item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Account</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="signup.html">Sign up</a>
+                        <a class="dropdown-item" href="resetpass.html">Forget password</a>
+                        <a class="dropdown-item" href="account.html">My account</a>
+                    </div>
+                </li>
+                <li class="nav-item main-navbar__item dropdown megamenu">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu megamenu__list">
+                        <div class="row no-gutters">
+                            <div class="col-lg-8 megamenu__list--content">
+                                <div class="row">
+
+
+                                    <div class="col-md-4">
+                                        <a class="dropdown-item" href="https://www.google.com/search?q=buy+sofa&oq=buy+sofa&aqs=chrome..69i57j0i67i433j0i67l2j0i512l2j0i67i457j0i402j0i67l2.1896j0j7&sourceid=chrome&ie=UTF-8 "target="_self">Sofa</a>
+                                        <a class="dropdown-item" href="https://www.google.com/search?q=cot&rlz=1C25IN1025&oq=cot&aqs=chrome..69i57j0i67j35i39l2j69i60l4.4774j0j7&sourceid=chrome&ie=UTF-8" target="_self"> Cot</a>
+<a class="dropdown-item" href="https://www.google.com/search?q=recliner&rlz=1C1ONGR_enIN1025IN1025&oq=recliner&aqs=chrome..69i57j0i433i512l2j0i131i433i512j0i512l3j0i433i512j0i512l2.5356j0j15&sourceid=chrome&ie=UTF-8"target="_self" > Recliner</a>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="megamenu-service">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="megamenu-service__icon">
+                                                        <i class="icon-delivery-truck icon"></i>
+                                                        <h6>Free shipping</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="megamenu-service__icon">
+                                                        <i class="icon-refund icon"></i>
+                                                        <h6>1 month guarantee</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="megamenu-service__icon">
+
+                                                        <i class="icon-support icon"></i>
+                                                        <h6>24 hours services</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 megamenu__list--img">
+                                <img src="static/images/megamenu-thumb01.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item main-navbar__item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- end main header navbar -->
+<!-- main header slider -->
+<div class="hero-header-slider">
+    <div class="owl-carousel ltr" id="heroHeaderSlider">
+        <div class="item">
+            <div class="hero-header-slider__img slider-img"
+                 style="background-image: url('static/images/header/header-01.jpg')">
+                <div class="hero-header-slider__wrapper">
+                    <div class="slider-inner">
+                        <div class="container overflow-hidden">
+                            <div class="inner-content inner-content--dark slider-animated">
+                                <h5 class="slider-subtitle animated">New Trend</h5>
+                                <h1 class="slider-title animated">A new way for budget sofas</h1>
+                                <p class="slider-text animated">inexpensive convertible sofas, economical convertible sofas, recliners affordable
+                                    .</p>
+                                <div class="slider-btn">
+                                    <a class="btn animated" href="#">Shop now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="hero-header-slider__img slider-img"
+                 style="background-image: url('images/header/header-02.jpg')">
+                <div class="hero-header-slider__wrapper">
+                    <div class="slider-inner">
+                        <div class="container overflow-hidden">
+                            <div class="inner-content inner-content--dark slider-animated">
+                                <h5 class="slider-subtitle animated">New arrivals</h5>
+                                <h1 class="slider-title animated">Stay on trend in new year</h1>
+                                <p class="slider-text animated">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Quam, vel.</p>
+                                <div class="slider-btn">
+                                    <a class="btn animated" href="#">View more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of main header -->
+<!-- main content -->
+<div class="main-content py-100">
+    <div class="container">
+        <!-- items slider light -->
+        <div class="mb-100 overflow-hidden">
+            <h2 class="main-title">New Arrivals</h2>
+            <div class="owl-carousel card-item-slider ltr" id="itemSliderLight">
+                <div class="item">
+                    <div class="card-item card-item--light">
+                        <div class="card-item__bg">
+                            <a href="#"><img src="static/images/product-08.jpg" alt="">
+                                <span class="badge card-item__bg--badge">New</span>
+                            </a>
+                        </div>
+                        <div class="card-item__body">
+                            <div class="card-item__body--price">
+                                <strong>$299.00</strong>
+                            </div>
+                            <div class="card-item__body--title">
+                                <a href="#"><h4>Modern fabric armchair</h4></a>
+                            </div>
+                            <div class="product-rate">
+                                <div class="product-rate__star">
+                                    <span class="rate-3"></span>
+                                </div>
+                                <div class="rate-number">
+                                    (3)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item__overlay">
+                            <ul class="action-btn">
+                                <li><a href="https://damroindia.com/ap/living-room/sofa.html?gclid=Cj0KCQjwkt6aBhDKARIsAAyeLJ3xQr820BXuJduk-tL5PSGaMWnA1ruPfubLV9fMXKPPP2H-vh7xFawaAoA_EALw_wcB" class="icon-box"><i class="icon-search"></i></a></li>
+                                <li class="wishlist-btn"><span class="icon-box"><i
+                                        class="wishlist__icon icon-heart"></i></span></li>
+                            </ul>
+                            <a href="#" class="btn">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-item card-item--light">
+                        <div class="card-item__bg">
+                            <a href="#"><img src="static/images/product-02.jpg" alt="">
+                                <span class="badge card-item__bg--badge">30% sale</span>
+                            </a>
+                        </div>
+                        <div class="card-item__body">
+                            <div class="card-item__body--price">
+                                <strong>$390.99</strong>
+                            </div>
+                            <div class="card-item__body--title">
+                                <a href="#"><h4>budget sofa beds<</h4></a>
+                            </div>
+                            <div class="product-rate">
+                                <div class="product-rate__star">
+                                    <span class="rate-3"></span>
+                                </div>
+                                <div class="rate-number">
+                                    (3)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item__overlay">
+                            <ul class="action-btn">
+                                <li><a href="https://damroindia.com/ap/living-room/sofa.html?gclid=Cj0KCQjwkt6aBhDKARIsAAyeLJ3xQr820BXuJduk-tL5PSGaMWnA1ruPfubLV9fMXKPPP2H-vh7xFawaAoA_EALw_wcB" class="icon-box"><i class="icon-search"></i></a></li>
+                                <li class="wishlist-btn"><span class="icon-box"><i
+                                        class="wishlist__icon icon-heart"></i></span></li>
+                            </ul>
+                            <a href="#" class="btn">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-item card-item--light">
+                        <div class="card-item__bg">
+                            <a href="#"><img src="static/images/product-03.jpg" alt="">
+                                <!--                                <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                            </a>
+                        </div>
+                        <div class="card-item__body">
+                            <div class="card-item__body--price">
+                                <strong>$90.00</strong>
+                            </div>
+                            <div class="card-item__body--title">
+                                <a href="#"><h4>Modern fabric armchair</h4></a>
+                            </div>
+                            <div class="product-rate">
+                                <div class="product-rate__star">
+                                    <span class="rate-3"></span>
+                                </div>
+                                <div class="rate-number">
+                                    (3)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item__overlay">
+                            <ul class="action-btn">
+                                <li><a href="https://damroindia.com/ap/living-room/sofa.html?gclid=Cj0KCQjwkt6aBhDKARIsAAyeLJ3xQr820BXuJduk-tL5PSGaMWnA1ruPfubLV9fMXKPPP2H-vh7xFawaAoA_EALw_wcB" class="icon-box"><i class="icon-search"></i></a></li>
+                                <li class="wishlist-btn"><span class="icon-box"><i
+                                        class="wishlist__icon icon-heart"></i></span></li>
+                            </ul>
+                            <a href="#" class="btn">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-item card-item--light">
+                        <div class="card-item__bg">
+                            <a href="#"><img src="static/images/product-01.jpg" alt="">
+                                <span class="badge card-item__bg--badge">50% sale</span>
+                            </a>
+                        </div>
+                        <div class="card-item__body">
+                            <div class="card-item__body--price">
+                                <strong>$320.00</strong>
+                            </div>
+                            <div class="card-item__body--title">
+                                <a href="#"><h4>Modern fabric armchair</h4></a>
+                            </div>
+                            <div class="product-rate">
+                                <div class="product-rate__star">
+                                    <span class="rate-3"></span>
+                                </div>
+                                <div class="rate-number">
+                                    (3)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item__overlay">
+                            <ul class="action-btn">
+                                <li><a href="https://damroindia.com/ap/living-room/sofa.html?gclid=Cj0KCQjwkt6aBhDKARIsAAyeLJ3xQr820BXuJduk-tL5PSGaMWnA1ruPfubLV9fMXKPPP2H-vh7xFawaAoA_EALw_wcB" class="icon-box"><i class="icon-search"></i></a></li>
+                                <li class="wishlist-btn"><span class="icon-box"><i
+                                        class="wishlist__icon icon-heart"></i></span></li>
+                            </ul>
+                            <a href="#" class="btn">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-item card-item--light">
+                        <div class="card-item__bg">
+                            <a href="#"><img src="static/images/product-12.jpg" alt="">
+                                <!--                                <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                            </a>
+                        </div>
+                        <div class="card-item__body">
+                            <div class="card-item__body--price">
+                                <strong>$320.00</strong>
+                            </div>
+                            <div class="card-item__body--title">
+                                <a href="#"><h4>Modern fabric armchair</h4></a>
+                            </div>
+                            <div class="product-rate">
+                                <div class="product-rate__star">
+                                    <span class="rate-3"></span>
+                                </div>
+                                <div class="rate-number">
+                                    (3)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item__overlay">
+                            <ul class="action-btn">
+                                <li><a href="https://damroindia.com/ap/living-room/sofa.html?gclid=Cj0KCQjwkt6aBhDKARIsAAyeLJ3xQr820BXuJduk-tL5PSGaMWnA1ruPfubLV9fMXKPPP2H-vh7xFawaAoA_EALw_wcB" class="icon-box"><i class="icon-search"></i></a></li>
+                                <li class="wishlist-btn"><span class="icon-box"><i
+                                        class="wishlist__icon icon-heart"></i></span></li>
+                            </ul>
+                            <a href="#" class="btn">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end items slider light -->
+    </div>
+    <!-- end items slider light blue -->
+    <!--  banner call to action  -->
+    <div class="banner banner-full mb-100 overflow-hidden"
+         style="background-image: url('images/banners/banner-bg-05.jpg');">
+        <div class="container">
+            <div class="banner-full__inner">
+                <a href="#">
+                    <h3>Big Sale!</h3>
+                    <h2>Find the best sofas economical<br><span class="text-bg">& Save up to 45%</span></h2>
+                </a>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+    </div>
+    <!--  end banner call to action  -->
+    <div class="container">
+        <!-- items slider light blue -->
+        <div class="mb-100 overflow-hidden">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="main-title wow fadeIn">Top selling</h2>
+                </div>
+            </div>
+            <div class="owl-carousel card-item-slider ltr wow fadeIn" id="itemSliderBlue">
+                <div class="item">
+                    <div class="card-item card-item--blue">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="static/images/product-14.jpg" class="card-item__img" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-item__body">
+                                    <div class="card-item__body--title">
+                                        <a href="#"><h3>Gray Dining chair</h3></a>
+                                    </div>
+                                    <div class="card-item__body--price">
+                                        <strong>$150,00</strong>
+                                        <span class="old">$250.00</span>
+                                    </div>
+                                    <div class="card-item__body--rate">
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__body--btn">
+                                        <a href="#" class="btn btn-shop">Shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-item card-item--blue">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="static/images/product-15.jpg" class="card-item__img" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-item__body">
+                                    <div class="card-item__body--title">
+                                        <a href="#"><h3>Gray Dining chair</h3></a>
+                                    </div>
+                                    <div class="card-item__body--price">
+                                        <strong>$150,00</strong>
+                                        <span class="old">$250.00</span>
+                                    </div>
+                                    <div class="card-item__body--rate">
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__body--btn">
+                                        <a href="#" class="btn btn-shop">Shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-item card-item--blue">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="static/images/product-16.jpg" class="card-item__img" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-item__body">
+                                    <div class="card-item__body--title">
+                                        <a href="#"><h3>Gray Dining chair</h3></a>
+                                    </div>
+                                    <div class="card-item__body--price">
+                                        <strong>$150,00</strong>
+                                        <span class="old">$250.00</span>
+                                    </div>
+                                    <div class="card-item__body--rate">
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__body--btn">
+                                        <a href="#" class="btn btn-shop">Shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of items slider light blue -->
+        <!-- smart shop section -->
+        <div class="mb-100">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="main-title">Smart Choice</h2>
+                </div>
+                <div class="col-12">
+                    <div class="smart-shop">
+                        <!--            <div class="smart-shop__badge">Smart choice</div>-->
+                        <div class="smart-shop__img">
+                            <img src="static/images/smart-shop.jpg" alt="">
+                            <div class="smart-shop__btn btn1">
+                                <button type="button" class="btn btn__pulse"><span><i class="fas fa-plus"></i></span>
+                                </button>
+                                <div class="smart-shop__btn--details hide">
+                                    <a href="#">
+                                        Minimal Frame</a>
+                                    <span class="price">
+                                        <strong>$250.00</strong>
+                                        <span class="old">$450.00</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="smart-shop__btn btn2">
+                                <button type="button" class="btn btn__pulse"><span><i class="fas fa-plus"></i></span>
+                                </button>
+                                <div class="smart-shop__btn--details hide">
+                                    <a href="#">Minimal sofa</a>
+                                    <span class="price">
+                                        <strong>$250.00</strong>
+                                        <span class="old">$450.00</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="smart-shop__btn btn3">
+                                <button type="button" class="btn btn__pulse"><span><i class="fas fa-plus"></i></span>
+                                </button>
+                                <div class="smart-shop__btn--details hide">
+                                    <a href="#">Minimal lighting</a>
+                                    <span class="price">
+                                        <strong>$250.00</strong>
+                                        <span class="old">$450.00</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end smart shop section -->
+    </div>
+    <!-- gallery -->
+    <div class="res-gallery res-gallery--bg mb-100">
+        <div class="container">
+            <div class="row">
+                <!-- gallery tabs -->
+                <div class="col-lg-3 res-gallery__tabs">
+                    <h3 class="gallery-title">
+                        <span>2020 Lookbook</span>
+                        <span>Featured Collections</span>
+                    </h3>
+                    <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-cat01-tab"
+                           data-toggle="pill" href="#v-pills-cat01"
+                           role="tab"
+                           aria-controls="v-pills-cat01" aria-selected="true">Accessories</a>
+                        <a class="nav-link" id="v-pills-cat02-tab" data-toggle="pill"
+                           href="#v-pills-cat02" role="tab"
+                           aria-controls="v-pills-cat02" aria-selected="false">Sofas and armchair</a>
+                        <a class="nav-link" id="v-pills-cat03-tab" data-toggle="pill"
+                           href="#v-pills-cat03" role="tab"
+                           aria-controls="v-pills-cat03" aria-selected="false">Chairs and tools</a>
+                        <a class="nav-link" id="v-pills-cat04-tab" data-toggle="pill"
+                           href="#v-pills-cat04" role="tab"
+                           aria-controls="v-pills-cat04" aria-selected="false">Lightning</a>
+                    </div>
+                </div>
+                <!-- gallery content -->
+                <div class="col-lg-9">
+                    <div class="tab-content res-gallery__content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-cat01" role="tabpanel"
+                             aria-labelledby="v-pills-cat01-tab">
+                            <div class="row">
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery01.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery02.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery08.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery07.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery04.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery05.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-cat02" role="tabpanel"
+                             aria-labelledby="v-pills-cat02-tab">
+                            <div class="row">
+                                <div class="col-12 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery03.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery05.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery02.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery06.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-cat03" role="tabpanel"
+                             aria-labelledby="v-pills-cat03-tab">
+                            <div class="row">
+                                <div class="col-12 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery03.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery05.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery02.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery06.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-cat04" role="tabpanel"
+                             aria-labelledby="v-pills-cat04-tab">
+                            <div class="row">
+                                <div class="col-12 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery03.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery05.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery02.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-6 gallery-column">
+                                    <div class="image-effect">
+                                        <img src="static/images/gallery/gallery06.jpg" alt="">
+                                        <div class="image-effect__content">
+                                            <a href="#"><h3 class="link">
+                                                View more</h3></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end gallery -->
+    <!-- latest blog post -->
+    <div class="container">
+        <div class="row overflow-hidden">
+            <div class="col-12">
+                <h2 class="main-title wow fadeIn">The Latest Blog posts</h2>
+            </div>
+        </div>
+        <div class="row wow fadeIn">
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-post blog-post--grid">
+                    <div class="blog-post__img">
+                        <div class="blog-post__img--overlay"></div>
+                        <img src="static/images/blog1.jpg" alt="">
+                        <a href="#" class="btn blog-post__btn">
+                            Read more
+                        </a>
+                    </div>
+                    <div class="blog-post__inner">
+                        <div class="blog-post__inner--title">
+                            <a href="#"><h4>3 great ways to design your bedroom</h4></a>
+                        </div>
+                        <div class="blog-post__inner--details">
+                            <span class="author">By Adam Smith,</span>
+                            <span class="date">December 18, 2019</span>
+                        </div>
+                        <div class="blog-post__inner--des">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error maiores nemo obcaecati
+                                provident qui, quos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-post blog-post--grid">
+                    <div class="blog-post__img">
+                        <div class="blog-post__img--overlay"></div>
+                        <img src="static/images/blog2.jpg" alt="">
+                        <a href="#" class="btn blog-post__btn">
+                            Read more
+                        </a>
+                    </div>
+                    <div class="blog-post__inner">
+                        <div class="blog-post__inner--title">
+                            <a href="#"><h4>How to design a happy home</h4></a>
+                        </div>
+                        <div class="blog-post__inner--details">
+                            <span class="author">By Adam Smith,</span>
+                            <span class="date">December 18, 2019</span>
+                        </div>
+                        <div class="blog-post__inner--des">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error maiores nemo obcaecati
+                                provident qui, quos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mx-auto">
+                <div class="blog-post blog-post--grid">
+                    <div class="blog-post__img">
+                        <div class="blog-post__img--overlay"></div>
+                        <img src="static/images/blog3.jpg" alt="">
+                        <a href="#" class="btn blog-post__btn">
+                            Read more
+                        </a>
+                    </div>
+                    <div class="blog-post__inner">
+                        <div class="blog-post__inner--title">
+                            <a href="#"><h4>Top tips for sustainable living</h4></a>
+                        </div>
+                        <div class="blog-post__inner--details">
+                            <span class="author">By Adam Smith,</span>
+                            <span class="date">December 18, 2019</span>
+                        </div>
+                        <div class="blog-post__inner--des">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error maiores nemo obcaecati
+                                provident qui, quos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end latest blog post -->
+
+</div>
+<!-- end main content -->
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top-row">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer__content">
+                    <div class="footer-logo">
+                        <img src="static/images/logo.png" alt="">
+                    </div>
+                    <p>convertible sofas sale,convertible recliners sale,arms chairs sale,tables sale,cots sale
+convertible sofas bargain,bargain convertible sofas,convertible sofas affordable,affordable convertible sofas,convertible sofas cheap,cheap convertible sofas,convertible sofas low cost,low cost convertible sofas,convertible sofas low price,low price convertible sofas
+.</p>
+                    <ul class="social-media">
+                        <li class="social-media__item">
+                            <a href="#"><i class="icon-facebook"></i></a>
+                        </li>
+                        <li class="social-media__item">
+                            <a href="#"><i class="icon-instagram"></i></a>
+                        </li>
+                        <li class="social-media__item">
+                            <a href="#"><i class="icon-twitter"></i></a>
+                        </li>
+                        <li class="social-media__item">
+                            <a href="#"><i class="icon-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 footer__content">
+                    <h5 class="footer-heading">Helpful Links</h5>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a href="index-2.html">Home</a></li>
+                        <li class="footer-list__item"><a href="blog-grid.html">Blog</a></li>
+                        <li class="footer-list__item"><a href="#">Catalogues</a></li>
+                        <li class="footer-list__item"><a href="about.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer__content">
+                    <h5 class="footer-heading">Need help</h5>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a href="contact.html">Contact us</a></li>
+                        <li class="footer-list__item"><a href="faq.html">FAQ</a></li>
+                        <li class="footer-list__item"><a href="#">Privacy policy</a></li>
+                        <li class="footer-list__item"><a href="payment-shipping.html">Payment and Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer__content">
+                    <h5 class="footer-heading">Keep in touch</h5>
+                    <ul class="footer-list footer-list-info">
+                        <li class="footer-list__item">
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <span>NO.22, Main street, 21 Ave, Los Angeles, California</span>
+                        </li>
+                        <li class="footer-list__item">
+                            <span><i class="fas fa-phone"></i></span>
+                            <span>+123456789</span></li>
+                        <li class="footer-list__item">
+                            <span><i class="fas fa-envelope"></i></span>
+                            <span>Info@info.com</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; copyright 2019. Designed with love by MinimalThemes </p>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+<!-- scroll up btn -->
+<a class="back-to-top-btn" id="back-to-top"></a>
+<!-- end scroll up btn -->
+<!-- loader -->
+<div class="loader">
+    <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+    </div>
+</div>
+<!-- end loader -->
+
+<!-- All Jquery -->
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/popper.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+<!-- owl carousel js -->
+<script type="text/javascript" src="static/js/owl.carousel.min.js"></script>
+<!-- Jquery ui -->
+<script type="text/javascript" src="static/js/jquery-ui.min.js"></script>
+<!-- light box js -->
+<script type="text/javascript" src="static/js/lightbox.min.js"></script>
+<!-- typeahead js -->
+<script type="text/javascript" src="static/js/typeahead.jquery.min.js"></script>
+<!-- master zoom image js -->
+<script type="text/javascript" src="static/js/jquery.zoom.min.js"></script>
+<!-- countdown js -->
+<script type="text/javascript" src="static/js/countdown.jquery.min.js"></script>
+<!-- nice select js -->
+<script type="text/javascript" src="static/js/nice-select.min.js"></script>
+<!-- wow js -->
+<script type="text/javascript" src="static/js/wow.min.js"></script>
+<!-- custom js -->
+<script type="text/javascript" src="static/js/custom.js"></script>
+
+</body>
+
+T -->
+</html>

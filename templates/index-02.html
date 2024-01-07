@@ -1,0 +1,2074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.minimalthemes.net/sofa/index-02.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Oct 2022 09:57:07 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sofa</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel='stylesheet' href='css/fontawesome.min.css'>
+    <!-- Animate -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- light box -->
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <!-- nice select -->
+    <link rel="stylesheet" href="css/nice-select.min.css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="scss/main.css">
+
+</head>
+
+<body>
+<!-- main header navbar -->
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar" id="mainMenu">
+    <div class="container">
+        <a class="navbar-brand" href="index-2.html">
+            <img src="images/logo.png" alt="">
+        </a>
+        <!--  navbar actions -->
+        <div class="main-navbar-action">
+            <!-- navbar search box -->
+            <div class="search-wrapper">
+                <div class="search-wrapper__btn">
+                    <i class="icon-search"></i>
+                </div>
+                <div class="search-wrapper__box">
+                    <div class="search-box" id="the-basics">
+                        <form>
+                            <div class="form-group form-input form-input--search">
+                                <input type="text" class="form-control typeahead" id="search" name="search" value=""
+                                       placeholder="Search...">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- end of navbar search box -->
+            <div id="mainNavbarDropdown">
+                <!-- navbar user account dropdown -->
+                <div class="dropdown-wrapper" id="usermenu" data-collapse="false">
+                    <div class="account-wrapper">
+                        <!-- login form wrapper -->
+                        <div class="account-wrapper__heading">
+                            <span>Login</span>
+                            <span class="account-wrapper__heading--link">Dont you have an account? <a
+                                    href="signup.html">Sign up</a></span>
+                        </div>
+                        <div class="account-wrapper__content">
+                            <form class="custom-form">
+                                <div class="form-group custom-form__input">
+                                    <input type="email" class="form-control" id="emailInput"
+                                           placeholder="Email">
+                                </div>
+                                <div class="form-group custom-form__input">
+                                    <div class="input-box password-box">
+                                        <input type="password" class="form-control" id="passwordInput"
+                                               placeholder="Password">
+                                        <div class="input-box__icon">
+                                            <span class="showhidepassword"><i class="far fa-eye-slash"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="forgot-pass">
+                                    <a href="resetpass.html">
+                                        <small>Forget your password?</small>
+                                    </a>
+                                </div>
+                                <div class="custom-form__btn">
+                                    <button type="submit" class="btn submit-btn">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- account links when user is logged in-->
+                        <!--                    <a class="dropdown-item" href="account.html#v-pills-profile-tab"><span><i-->
+                        <!--                            class="icon-user-profile"></i></span>Profile</a>-->
+                        <!--                    <a class="dropdown-item" href="account.html#v-pills-order-tab"><span><i-->
+                        <!--                            class="icon-shopping-basket"></i></span>Orders</a>-->
+                        <!--                    <a class="dropdown-item" href="account.html#v-pills-address-tab"><span><i-->
+                        <!--                            class="icon-sign"></i></span>Addresses</a>-->
+                        <!--                    <a class="dropdown-item" href="account.html#v-pills-wishlist-tab"><span><i-->
+                        <!--                            class="icon-wish-list"></i></span>wishlist</a>-->
+                        <!--                    <a class="dropdown-item" href="#"><span><i class="icon-log-out"></i></span>Log out</a>-->
+
+                    </div>
+                </div>
+                <!-- navbar cart dropdown -->
+                <div class="dropdown-wrapper" id="cartmenu" data-collapse="false">
+                    <div class="dropdown-wrapper__item">
+                        <div class="media">
+                            <div class="media__img">
+                                <a class="delete-icon" href="#"><i class="icon-bin"></i></a>
+                                <a href="#"><img src="images/product-01.jpg" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <a href="#"><h6 class="media-title">Fabric armchair</h6></a>
+                                <small class="media-details">$120.00</small>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media__img">
+                                <a class="delete-icon" href="#"><i class="icon-bin"></i></a>
+                                <a href="#"><img src="images/product-03.jpg" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <a href="#"><h6 class="media-title">Fabric armchair</h6></a>
+                                <small class="media-details">$140.00</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-wrapper__item total-price">
+                        <span>Total price: <span>$260.00</span></span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-wrapper__item cart-btn">
+                        <a href="#" class="btn cart-btn__checkout">Checkout</a>
+                        <a href="#" class="btn cart-btn__details">View cart</a>
+                    </div>
+                    <!-- the cart is empty -->
+                    <!--                    <div class="empty-cart">-->
+                    <!--                        <i class="icon-close empty-cart__icon"></i>-->
+                    <!--                        <p class="empty-cart__text">There is no product in your cart</p>-->
+                    <!--                    </div>-->
+                </div>
+            </div>
+            <!-- navbar user account dropdown -->
+            <div class="main-navbar-action__btn nav-dropdown">
+                <a class="dropdown-link" data-target="usermenu">
+                    <i class="icon-user"></i>
+                </a>
+            </div>
+            <!-- navbar cart dropdown -->
+            <div class="main-navbar-action__btn nav-dropdown">
+                <a class="dropdown-link" data-target="cartmenu">
+                    <span class="cart-badge">2</span>
+                    <i class="icon-shopping-bag"></i>
+                </a>
+            </div>
+            <!-- navbar actions content -->
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+                aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav main-navbar">
+                <li class="nav-item main-navbar__item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="index-2.html">Demo01</a>
+                        <a class="dropdown-item" href="index-02.html">Demo02</a>
+                        <a class="dropdown-item" href="index-03.html">Demo03</a>
+                    </div>
+                </li>
+                <li class="nav-item main-navbar__item dropdown megamenu">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Shop</a>
+                    <div class="dropdown-menu megamenu__list">
+                        <div class="row no-gutters">
+                            <div class="col-lg-8 megamenu__list--content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="megamenu__list--title">Shop Layout</h5>
+                                        <a class="dropdown-item" href="shop-sidebar-right.html">Shop right
+                                            sidebar</a>
+                                        <a class="dropdown-item" href="shop-sidebar-left.html">Shop left
+                                            sidebar</a>
+                                        <a class="dropdown-item" href="shop-list.html">Shop list style</a>
+                                        <a class="dropdown-item" href="shop-grid.html">Shop grid style</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="megamenu__list--title">Shop Pages</h5>
+                                        <a class="dropdown-item" href="single-product.html">Single product</a>
+                                        <a class="dropdown-item" href="cart01.html">Shopping Cart 01</a>
+                                        <a class="dropdown-item" href="cart02.html">Shopping Cart 02</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 megamenu__list--img">
+                                <img src="images/megamenu-thumb02.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item main-navbar__item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Blog</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="blog-list-full.html">Blog list 01</a>
+                        <a class="dropdown-item" href="blog-list.html">Blog list 02</a>
+                        <a class="dropdown-item" href="blog-grid.html">Blog grid view</a>
+                        <a class="dropdown-item" href="single-blog-post.html">Single blog post</a>
+                    </div>
+                </li>
+                <li class="nav-item main-navbar__item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Account</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="signup.html">Sign up</a>
+                        <a class="dropdown-item" href="resetpass.html">Forget password</a>
+                        <a class="dropdown-item" href="account.html">My account</a>
+                    </div>
+                </li>
+                <li class="nav-item main-navbar__item dropdown megamenu">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu megamenu__list">
+                        <div class="row no-gutters">
+                            <div class="col-lg-8 megamenu__list--content">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a class="dropdown-item" href="about.html">About us</a>
+                                        <a class="dropdown-item" href="faq.html">FAQ</a>
+                                        <a class="dropdown-item" href="compare.html">Comparing</a>
+                                        <a class="dropdown-item" href="payment-shipping.html">Shipping and payment</a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="dropdown-item" href="checkout.html">Check out</a>
+                                        <a class="dropdown-item" href="purchase-notif.html">Successful purchase</a>
+                                        <a class="dropdown-item" href="order-tracking.html">Order tracking</a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="dropdown-item" href="coming-soon.html">Coming soon</a> <a
+                                            class="dropdown-item" href="error.html">404 page</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="megamenu-service">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="megamenu-service__icon">
+                                                        <i class="icon-delivery-truck icon"></i>
+                                                        <h6>Free shipping</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="megamenu-service__icon">
+                                                        <i class="icon-refund icon"></i>
+                                                        <h6>1 month guarantee</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="megamenu-service__icon">
+
+                                                        <i class="icon-support icon"></i>
+                                                        <h6>24 hours services</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 megamenu__list--img">
+                                <img src="images/megamenu-thumb01.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item main-navbar__item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- end main header navbar -->
+<!-- main header slider -->
+<div class="hero-header-slider">
+    <div class="owl-carousel ltr" id="heroHeaderSlider">
+        <div class="item">
+            <div class="hero-header-slider__img slider-img"
+                 style="background-image: url('images/header/header-03.jpg')">
+                <div class="hero-header-slider__overlay"></div>
+                <div class="hero-header-slider__wrapper">
+                    <div class="slider-inner">
+                        <div class="container overflow-hidden">
+                            <div class="inner-content inner-content--center slider-animated">
+                                <h5 class="slider-subtitle animated">New Trend</h5>
+                                <h1 class="slider-title animated">Get Ready for guests</h1>
+                                <p class="slider-text animated"><span>20% off</span> select dining tables and
+                                    chairs</p>
+                                <div class="slider-btn">
+                                    <a class="btn animated" href="#">Shop now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="hero-header-slider__img slider-img"
+                 style="background-image: url('images/header/header-04.jpg')">
+                <div class="hero-header-slider__overlay"></div>
+                <div class="hero-header-slider__wrapper">
+                    <div class="slider-inner">
+                        <div class="container overflow-hidden">
+                            <div class="inner-content inner-content--center slider-animated">
+                                <h1 class="slider-title animated">Stay on trend in spring 2020</h1>
+                                <h2 class="slider-subtitle animated"><span>New arrivals</span> 2020 lookbook</h2>
+                                <div class="slider-btn">
+                                    <a class="btn animated" href="#">View more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="hero-header-slider__img slider-img"
+                 style="background-image: url('images/header/header-05.jpg')">
+                <div class="hero-header-slider__overlay"></div>
+                <div class="hero-header-slider__wrapper">
+                    <div class="slider-inner">
+                        <div class="container overflow-hidden">
+                            <div class="inner-content inner-content--center slider-animated">
+                                <h1 class="slider-title animated">The joy of minimalistic living</h1>
+                                <h2 class="slider-subtitle animated">What do you need to be happy?</h2>
+                                <div class="slider-btn">
+                                    <a class="btn animated" href="#">View more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of main header -->
+<!-- main content -->
+<div class="main-content py-100">
+    <div class="container">
+        <!-- furniture categories icon box -->
+        <div class="mb-70 overflow-hidden">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="main-title">Shop by category</h2>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#" class="cat-box">
+                        <span class="icon-bed cat-box__icon"></span>
+                        <span class="cat-box__title">Beds</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#" class="cat-box">
+                        <span class="icon-armchair cat-box__icon"></span>
+                        <span class="cat-box__title">Sofas</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#" class="cat-box">
+                        <span class="icon-chair cat-box__icon"></span>
+                        <span class="cat-box__title">Chairs</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#" class="cat-box">
+                        <span class="icon-kitchen cat-box__icon"></span>
+                        <span class="cat-box__title">Pots and Pans</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#" class="cat-box">
+                        <span class="icon-bedding cat-box__icon"></span>
+                        <span class="cat-box__title">Bedding</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#" class="cat-box">
+                        <span class="icon-light cat-box__icon"></span>
+                        <span class="cat-box__title">Lightings</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#" class="cat-box">
+                        <span class="icon-tables cat-box__icon"></span>
+                        <span class="cat-box__title">Dining tables</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#" class="cat-box">
+                        <span class="icon-closet cat-box__icon"></span>
+                        <span class="cat-box__title">Dressers</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- end furniture categories icon box  -->
+        <!--  banner call to action  -->
+        <div class="row mb-100 overflow-hidden">
+            <div class="col-lg-6 wow fadeIn">
+                <div class="banner style2">
+                    <div class="banner__col">
+                        <div class="banner-img">
+                            <img src="images/banners/banner-bg-02.jpg" alt="">
+                        </div>
+                        <div class="banner-inner">
+                            <a href="#">
+                                <h4 class="title">Modern fabric Armchair</h4>
+                                <span class="sub-title">up to 50% Sale</span>
+                            </a>
+                            <a href="#" class="btn banner-btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn">
+                <div class="banner style2">
+                    <div class="banner__col">
+                        <div class="banner-img">
+                            <img src="images/banners/banner-bg-01.jpg" alt="">
+                        </div>
+                        <div class="banner-inner">
+                            <a href="#">
+                                <h4 class="title">Modern fabric Armchair</h4>
+                                <span class="sub-title">New Arrival</span>
+                            </a>
+                            <a href="#" class="btn banner-btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  end banner call to action  -->
+    </div>
+    <!-- trends and new products gallery -->
+    <div class="container">
+        <div class="mb-70 overflow-hidden">
+            <div class="res-gallery res-gallery--horizontal">
+                <div class="res-gallery__tabs">
+                    <h3 class="main-title">Featured Products</h3>
+                    <div class="nav nav-pills" id="v-pills-tab" role="tablist">
+                        <a class="nav-link nav-item active" id="v-pills-cat01-tab" data-toggle="pill"
+                           href="#v-pills-cat01"
+                           role="tab"
+                           aria-controls="v-pills-cat01" aria-selected="true">All products</a>
+                        <a class="nav-link nav-item" id="v-pills-cat02-tab" data-toggle="pill"
+                           href="#v-pills-cat02"
+                           role="tab"
+                           aria-controls="v-pills-cat02" aria-selected="false">Sofas and armchair</a>
+                        <a class="nav-link nav-item" id="v-pills-cat03-tab" data-toggle="pill"
+                           href="#v-pills-cat03"
+                           role="tab"
+                           aria-controls="v-pills-cat04" aria-selected="false">Chairs and tools</a>
+                        <a class="nav-link nav-item" id="v-pills-cat04-tab" data-toggle="pill"
+                           href="#v-pills-cat04"
+                           role="tab"
+                           aria-controls="v-pills-cat04" aria-selected="false">Lighting</a>
+                    </div>
+                </div>
+                <div class="tab-content res-gallery__content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-cat01" role="tabpanel"
+                         aria-labelledby="v-pills-cat01-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-08.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">New Arrival</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$299.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-02.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$390.99</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-03.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$90.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-01.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">50% Sale</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-09.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">20% Sale</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-10.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-11.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">New Arrival</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-12.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-cat02" role="tabpanel"
+                         aria-labelledby="v-pills-cat02-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-08.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">New Arrival</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$299.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-02.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$390.99</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-03.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$90.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-01.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">50% Sale</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-09.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">20% Sale</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-10.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-11.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">New Arrival</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-12.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-cat03" role="tabpanel"
+                         aria-labelledby="v-pills-cat03-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-08.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">New Arrival</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$299.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-02.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$390.99</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-03.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$90.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-01.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">50% Sale</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-09.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">20% Sale</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-10.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-11.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">New Arrival</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-12.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-cat04" role="tabpanel"
+                         aria-labelledby="v-pills-cat03-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-08.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">New Arrival</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$299.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-02.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$390.99</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-03.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$90.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-01.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">50% Sale</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-09.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">20% Sale</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-10.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-11.jpg" alt="">
+                                            <span class="badge card-item__bg--badge">New Arrival</span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card-item card-item--light mb-30">
+                                    <div class="card-item__bg">
+                                        <a href="#"><img src="images/product-12.jpg" alt="">
+                                            <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body--price">
+                                            <strong>$320.00</strong>
+                                        </div>
+                                        <div class="card-item__body--title">
+                                            <a href="#"><h4>Modern fabric armchair</h4></a>
+                                        </div>
+                                        <div class="product-rate">
+                                            <div class="product-rate__star">
+                                                <span class="rate-3"></span>
+                                            </div>
+                                            <div class="rate-number">
+                                                (3)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-item__overlay">
+                                        <ul class="action-btn">
+                                            <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                            <li class="wishlist-btn"><span class="icon-box"><i
+                                                    class="wishlist__icon icon-heart"></i></span></li>
+                                        </ul>
+                                        <a href="#" class="btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- trends and new products gallery -->
+    <!-- testimonials -->
+    <div class="mb-100">
+        <div class="testimonial testimonial__bg">
+            <div class="container">
+                <!-- testimonials carousel -->
+                <div class="owl-carousel ltr" id="testimonial">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-wrapper__img">
+                            <img src="images/profile-01.jpg" alt="">
+                        </div>
+                        <div class="carousel-wrapper__content">
+                            <div class="text">
+                                <p>“ Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+                                    Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+                                    lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram.
+                                    ”</p>
+                            </div>
+                            <div class="username">
+                                -John Smith
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-wrapper__img">
+                            <img src="images/profile-02.jpg" alt="">
+                        </div>
+                        <div class="carousel-wrapper__content">
+                            <div class="text">
+                                <p>“ Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+                                    Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+                                    lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram.
+                                    ”</p>
+                            </div>
+                            <div class="username">
+                                -John Smith
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item carousel-wrapper">
+                        <div class="carousel-wrapper__img">
+                            <img src="images/profile-03.jpg" alt="">
+                        </div>
+                        <div class="carousel-wrapper__content">
+                            <div class="text">
+                                <p>“ Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+                                    Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+                                    lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram.
+                                    ”</p>
+                            </div>
+                            <div class="username">
+                                -John Smith
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end testimonials carousel -->
+            </div>
+        </div>
+    </div>
+    <!-- end testimonials -->
+    <!-- top sellers carousel -->
+    <div class="container">
+        <div class="mb-100">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="main-title">
+                        This week top sellers
+                    </h2>
+                </div>
+            </div>
+            <div class="owl-carousel" id="itemSliderLight">
+                <div class="item">
+                    <div class="card-item card-item--light">
+                        <div class="card-item__bg">
+                            <a href="#"><img src="images/product-08.jpg" alt="">
+                                <span class="badge card-item__bg--badge">New Arrival</span>
+                            </a>
+                        </div>
+                        <div class="card-item__body">
+                            <div class="card-item__body--price">
+                                <strong>$299.00</strong>
+                            </div>
+                            <div class="card-item__body--title">
+                                <a href="#"><h4>Modern fabric armchair</h4></a>
+                            </div>
+                            <div class="product-rate">
+                                <div class="product-rate__star">
+                                    <span class="rate-3"></span>
+                                </div>
+                                <div class="rate-number">
+                                    (3)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item__overlay">
+                            <ul class="action-btn">
+                                <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                <li class="wishlist-btn"><span class="icon-box"><i
+                                        class="wishlist__icon icon-heart"></i></span></li>
+                            </ul>
+                            <a href="#" class="btn">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-item card-item--light">
+                        <div class="card-item__bg">
+                            <a href="#"><img src="images/product-02.jpg" alt="">
+                                <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                            </a>
+                        </div>
+                        <div class="card-item__body">
+                            <div class="card-item__body--price">
+                                <strong>$390.99</strong>
+                            </div>
+                            <div class="card-item__body--title">
+                                <a href="#"><h4>Modern fabric armchair</h4></a>
+                            </div>
+                            <div class="product-rate">
+                                <div class="product-rate__star">
+                                    <span class="rate-3"></span>
+                                </div>
+                                <div class="rate-number">
+                                    (3)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item__overlay">
+                            <ul class="action-btn">
+                                <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                <li class="wishlist-btn"><span class="icon-box"><i
+                                        class="wishlist__icon icon-heart"></i></span></li>
+                            </ul>
+                            <a href="#" class="btn">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-item card-item--light">
+                        <div class="card-item__bg">
+                            <a href="#"><img src="images/product-03.jpg" alt="">
+                                <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                            </a>
+                        </div>
+                        <div class="card-item__body">
+                            <div class="card-item__body--price">
+                                <strong>$90.00</strong>
+                            </div>
+                            <div class="card-item__body--title">
+                                <a href="#"><h4>Modern fabric armchair</h4></a>
+                            </div>
+                            <div class="product-rate">
+                                <div class="product-rate__star">
+                                    <span class="rate-3"></span>
+                                </div>
+                                <div class="rate-number">
+                                    (3)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item__overlay">
+                            <ul class="action-btn">
+                                <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                <li class="wishlist-btn"><span class="icon-box"><i
+                                        class="wishlist__icon icon-heart"></i></span></li>
+                            </ul>
+                            <a href="#" class="btn">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-item card-item--light">
+                        <div class="card-item__bg">
+                            <a href="#"><img src="images/product-01.jpg" alt="">
+                                <span class="badge card-item__bg--badge">50% Sale</span>
+                            </a>
+                        </div>
+                        <div class="card-item__body">
+                            <div class="card-item__body--price">
+                                <strong>$320.00</strong>
+                            </div>
+                            <div class="card-item__body--title">
+                                <a href="#"><h4>Modern fabric armchair</h4></a>
+                            </div>
+                            <div class="product-rate">
+                                <div class="product-rate__star">
+                                    <span class="rate-3"></span>
+                                </div>
+                                <div class="rate-number">
+                                    (3)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item__overlay">
+                            <ul class="action-btn">
+                                <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                <li class="wishlist-btn"><span class="icon-box"><i
+                                        class="wishlist__icon icon-heart"></i></span></li>
+                            </ul>
+                            <a href="#" class="btn">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-item card-item--light">
+                        <div class="card-item__bg">
+                            <a href="#"><img src="images/product-09.jpg" alt="">
+                                <span class="badge card-item__bg--badge">20% Sale</span>
+                            </a>
+                        </div>
+                        <div class="card-item__body">
+                            <div class="card-item__body--price">
+                                <strong>$320.00</strong>
+                            </div>
+                            <div class="card-item__body--title">
+                                <a href="#"><h4>Modern fabric armchair</h4></a>
+                            </div>
+                            <div class="product-rate">
+                                <div class="product-rate__star">
+                                    <span class="rate-3"></span>
+                                </div>
+                                <div class="rate-number">
+                                    (3)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item__overlay">
+                            <ul class="action-btn">
+                                <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                <li class="wishlist-btn"><span class="icon-box"><i
+                                        class="wishlist__icon icon-heart"></i></span></li>
+                            </ul>
+                            <a href="#" class="btn">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-item card-item--light">
+                        <div class="card-item__bg">
+                            <a href="#"><img src="images/product-10.jpg" alt="">
+                                <!--                                            <span class="badge card-item__bg&#45;&#45;badge">New Arrival</span>-->
+                            </a>
+                        </div>
+                        <div class="card-item__body">
+                            <div class="card-item__body--price">
+                                <strong>$320.00</strong>
+                            </div>
+                            <div class="card-item__body--title">
+                                <a href="#"><h4>Modern fabric armchair</h4></a>
+                            </div>
+                            <div class="product-rate">
+                                <div class="product-rate__star">
+                                    <span class="rate-3"></span>
+                                </div>
+                                <div class="rate-number">
+                                    (3)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item__overlay">
+                            <ul class="action-btn">
+                                <li><a href="#" class="icon-box"><i class="icon-search"></i></a></li>
+                                <li class="wishlist-btn"><span class="icon-box"><i
+                                        class="wishlist__icon icon-heart"></i></span></li>
+                            </ul>
+                            <a href="#" class="btn">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end top sellers carousel -->
+    <!-- subscribe call to action -->
+    <div class="newsletter-banner mb-100"
+         style="background-image: url('images/banners/banner-bg-08.jpg');">
+        <div class="banner__overlay"></div>
+        <div class="container">
+            <div class="newsletter-banner__content">
+                <h3>Daily offers and discounts</h3>
+                <span>Join Us Now</span>
+                <form>
+                    <div class="form-row">
+                        <div class="col-lg-4 col-md-6 col-sm-8 col-10 mx-auto">
+                            <div class="input-group ltr">
+                                <input type="email" class="form-control" id="subscribeInputEmail"
+                                       placeholder="Enter your email" aria-describedby=Emailsubscribe>
+                                <div class="input-group-append">
+                                    <button class="btn" type="submit" id="Emailsubscribe">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end subscribe call to action -->
+    <!-- blog post -->
+    <div class="container">
+        <div class="row overflow-hidden">
+            <div class="col-12">
+                <h2 class="main-title wow fadeIn">The Latest Blog posts</h2>
+            </div>
+        </div>
+        <div class="owl-carousel wow fadeIn" id="blogPostList">
+            <div class="blog-post blog-post--list">
+                <div class="blog-post__img">
+                    <a href="#">
+                        <div class="blog-post__img--overlay"></div>
+                        <img src="images/blog10.jpg" alt="">
+                    </a>
+                </div>
+                <div class="blog-post__inner">
+                    <div class="blog-post__inner--title">
+                        <a href="#"><h4>Quick tips to design your room</h4>
+                        </a>
+                    </div>
+                    <div class="blog-post__inner--content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, perferendis.</p>
+                    </div>
+                    <div class="blog-post__inner--details">
+                        <a href="#" class="author">By Adam Smith,</a>
+                        <span class="date">December 18, 2019</span>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-post blog-post--list">
+                <div class="blog-post__img">
+                    <a href="#">
+                        <div class="blog-post__img--overlay"></div>
+                        <img src="images/blog11.jpg" alt="">
+                    </a>
+                </div>
+                <div class="blog-post__inner">
+                    <div class="blog-post__inner--title">
+                        <a href="#"><h4>How to design a happy home?</h4></a>
+                    </div>
+                    <div class="blog-post__inner--content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, perferendis.</p>
+                    </div>
+                    <div class="blog-post__inner--details">
+                        <a href="#" class="author">By Adam Smith,</a>
+                        <span class="date">December 18, 2019</span>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-post blog-post--list">
+                <div class="blog-post__img">
+                    <a href="#">
+                        <div class="blog-post__img--overlay"></div>
+                        <img src="images/blog12.jpg" alt="">
+                    </a>
+                </div>
+                <div class="blog-post__inner">
+                    <div class="blog-post__inner--title">
+                        <a href="#"><h4>How to design a happy home?</h4></a>
+                    </div>
+                    <div class="blog-post__inner--content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, perferendis.</p>
+                    </div>
+                    <div class="blog-post__inner--details">
+                        <a href="#" class="author">By Adam Smith,</a>
+                        <span class="date">December 18, 2019</span>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-post blog-post--list">
+                <div class="blog-post__img">
+                    <a href="#">
+                        <div class="blog-post__img--overlay"></div>
+                        <img src="images/blog13.jpg" alt="">
+                    </a>
+                </div>
+                <div class="blog-post__inner">
+                    <div class="blog-post__inner--title">
+                        <a href="#"><h4>How to design a happy home?</h4></a>
+                    </div>
+                    <div class="blog-post__inner--content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, perferendis.</p>
+                    </div>
+                    <div class="blog-post__inner--details">
+                        <a href="#" class="author">By Adam Smith,</a>
+                        <span class="date">December 18, 2019</span>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-post blog-post--list">
+                <div class="blog-post__img">
+                    <a href="#">
+                        <div class="blog-post__img--overlay"></div>
+                        <img src="images/blog14.jpg" alt="">
+                    </a>
+                </div>
+                <div class="blog-post__inner">
+                    <div class="blog-post__inner--title">
+                        <a href="#"><h4>How to design a happy home?</h4></a>
+                    </div>
+                    <div class="blog-post__inner--content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, perferendis.</p>
+                    </div>
+                    <div class="blog-post__inner--details">
+                        <a href="#" class="author">By Adam Smith,</a>
+                        <span class="date">December 18, 2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end blog post -->
+</div>
+<!-- end main content -->
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top-row">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer__content">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A debitis dignissimos dolorem eum ex
+                        libero
+                        molestias qui quos repellat sunt.</p>
+                    <ul class="social-media">
+                        <li class="social-media__item">
+                            <a href="#"><i class="icon-facebook"></i></a>
+                        </li>
+                        <li class="social-media__item">
+                            <a href="#"><i class="icon-instagram"></i></a>
+                        </li>
+                        <li class="social-media__item">
+                            <a href="#"><i class="icon-twitter"></i></a>
+                        </li>
+                        <li class="social-media__item">
+                            <a href="#"><i class="icon-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 footer__content">
+                    <h5 class="footer-heading">Helpful Links</h5>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a href="index-2.html">Home</a></li>
+                        <li class="footer-list__item"><a href="blog-grid.html">Blog</a></li>
+                        <li class="footer-list__item"><a href="#">Catalogues</a></li>
+                        <li class="footer-list__item"><a href="about.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer__content">
+                    <h5 class="footer-heading">Need help</h5>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a href="contact.html">Contact us</a></li>
+                        <li class="footer-list__item"><a href="faq.html">FAQ</a></li>
+                        <li class="footer-list__item"><a href="#">Privacy policy</a></li>
+                        <li class="footer-list__item"><a href="payment-shipping.html">Payment and Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer__content">
+                    <h5 class="footer-heading">Keep in touch</h5>
+                    <ul class="footer-list footer-list-info">
+                        <li class="footer-list__item">
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <span>NO.22, Main street, 21 Ave, Los Angeles, California</span>
+                        </li>
+                        <li class="footer-list__item">
+                            <span><i class="fas fa-phone"></i></span>
+                            <span>+123456789</span></li>
+                        <li class="footer-list__item">
+                            <span><i class="fas fa-envelope"></i></span>
+                            <span>Info@info.com</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; copyright 2019. Designed with love by MinimalThemes </p>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+<!-- scroll up btn -->
+<a id="back-to-top"></a>
+<!-- end scroll up btn -->
+<!-- loader -->
+<div class="loader">
+    <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+    </div>
+</div>
+<!-- end loader -->
+
+<!-- All Jquery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- owl carousel js -->
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<!-- Jquery ui -->
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<!-- light box js -->
+<script type="text/javascript" src="js/lightbox.min.js"></script>
+<!-- typeahead js -->
+<script type="text/javascript" src="js/typeahead.jquery.min.js"></script>
+<!-- master zoom image js -->
+<script type="text/javascript" src="js/jquery.zoom.min.js"></script>
+<!-- countdown js -->
+<script type="text/javascript" src="js/countdown.jquery.min.js"></script>
+<!-- nice select js -->
+<script type="text/javascript" src="js/nice-select.min.js"></script>
+<!-- wow js -->
+<script type="text/javascript" src="js/wow.min.js"></script>
+<!-- custom js -->
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+<!-- Mirrored from demo.minimalthemes.net/sofa/index-02.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Oct 2022 09:57:13 GMT -->
+</html>
