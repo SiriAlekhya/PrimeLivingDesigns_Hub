@@ -22,11 +22,12 @@ Follow these steps to set up FurniWebHub locally:
 - The backend is implemented in Python.
 3. **Run the Application:**
 Set the Flask app environment variable.
+
 On Windows:
    ```bash
    set FLASK_APP=app.py
    ```
-   On macOS/Linux:
+On macOS/Linux:
    ```bash
   export FLASK_APP=app.py
   ```
@@ -35,7 +36,7 @@ Run the Flask app:
 flask run
 ```
 4. **Access the Website:**
-Open your web browser and navigate to http://localhost:3000.
+- Open your web browser and navigate to http://localhost:3000.
 
 ## Tech Stack
 **Frontend:** HTML, CSS, JavaScript.
